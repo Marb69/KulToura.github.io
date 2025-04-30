@@ -54,7 +54,7 @@ body{
 }
 .landing-content{
 
-    width: 40%;
+    width: 40vw;
     height: 60vh;
 }
 
@@ -153,6 +153,7 @@ body{
     justify-content: space-around;
     padding: 10px;
     gap: 500px;
+    
 }
 
 .nav-link{
@@ -467,7 +468,7 @@ ul li:hover ul.dropdown{
 .why-container{
 
     display: flex;
-  
+   
     justify-content: center;
     justify-content: space-around;
     gap: 10px;
@@ -481,11 +482,13 @@ ul li:hover ul.dropdown{
 
 
     width: 30vw;
+    margin: 15px;
 }
 
 .why-container .why-image img{
 
     width: 100%;
+    height: 100%;
 }
 
 .why-container .why-text{
@@ -493,12 +496,26 @@ ul li:hover ul.dropdown{
     width: 40vw;
     align-content: center;
     font-size: 1.2rem;
+    margin: 15px;
+    text-align: justify;
 }
 .why-container .why-text h3{
 
     margin-bottom: 10px;
     font-size: 1.9rem;
 
+}
+
+.pattern-video{
+
+    background-color: rgba(255, 255, 255, 0);
+    width: 30vw;
+}
+.pattern-video video{
+
+    width:100%;
+    justify-items: center;
+  
 }
 /*END*/
 
@@ -514,26 +531,46 @@ ul li:hover ul.dropdown{
 
     display: flex;
     justify-content: center;
-    
-    gap: 180px;
+    text-align: justify;
+    gap: 20px;
     padding: 20px;
-    margin: 20px;
+    background:linear-gradient(rgba(85, 84, 84, 0.673)),url(Media/Asset-Element/Background/filipino-culture.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
+
 .categories-container .image-content{
 
     width: 500px;
     height: 400px;
+    
 }
 
 .categories-container .image-content img{
 
     width: 100%;
     height: 100%;
+    backdrop-filter: blur(10px);
     object-fit: cover;
     border-radius:50%;
-    box-shadow: 0 5px 10px rgba(164, 162, 162, 0.875);
+    box-shadow: 0 4px 15px rgba(122, 114, 114, 0.875);
 }
 
+.categories-container .headline-content{
+
+    margin: 20px;
+}
+.categories-container .headline-content h3{
+
+    color: #fff700;
+}
+
+.categories-container .headline-content p{
+
+    color: #bfc0c1;
+}
 .categories-container .headline-content .cta-btn{
 
     width: 15%;
@@ -545,6 +582,8 @@ ul li:hover ul.dropdown{
     a{
 
         text-decoration: none;
+        color: white;
+        letter-spacing: 2px;
     }
 }
 .categories-container .headline-content .cta-btn:hover{
@@ -568,6 +607,7 @@ ul li:hover ul.dropdown{
         padding-bottom: 10px;
         letter-spacing: 10px;
         font-size: 1.5rem;
+
 
     }
  
@@ -594,38 +634,53 @@ ul li:hover ul.dropdown{
 }
 .categories-section .card-featured .card-banner{
 
-         width: 100%;
-         height:200px;
-        
+         width: 20vw;
+         height:40vh;
+        overflow: hidden;
+        border-radius: 10px;
          
 
          
 }
 .categories-section .card-featured .card-banner img{
-
-    border-radius: 10px;
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+.categories-section .card-featured .card-banner img:hover{
+
+
+    transform: scale(1.04);
+    transition: 0.3s;
+}
 .card-featured .card-container .card-description{
 
-    padding-top: 10px;
-    text-align: justify;
+    margin-top: 15px;
+   
 
     h3{
 
         font-size: 1.5rem;
         margin-bottom: 10px;
+        letter-spacing: 5px;
+        color: #444443;
     }
 
     p{
 
       
         margin-bottom: 10px;
+        text-align: justify;
     }
 }  
  .card-container .cta-btn{
 
     background-color: #d3ba00;
+    margin-top: 20px;
     width: 35%;
     text-align: center;
     box-shadow: 0 5px 7px rgb(171, 170, 170);
@@ -689,7 +744,8 @@ ul li:hover ul.dropdown{
 }
 .philippines-container-content{
 
-    padding: 10px;
+    padding: 50px;
+    
     
 }
 
@@ -698,16 +754,27 @@ ul li:hover ul.dropdown{
 
     justify-items: center;
     padding: 10px;
+    background-color: #b0b3b4;
 }
 .philippine-gallery-container .card-container{
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 30px;
+  margin: 20px;
   width: 70vw;
   gap: 100px;
   
 
+}
+
+.philippine-gallery-container .card-container h2{
+
+    color: #464444;
+    letter-spacing: 20px;
+    text-align: center;
+    margin: 20px;
 }
 .about-philippines  .image{
 
@@ -724,9 +791,47 @@ ul li:hover ul.dropdown{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    box-shadow: 0 5px 10px rgb(100, 98, 98);
   
 }
 
+
+.section-island h2{
+
+   text-align: center;
+   padding: 20px;
+   font-size: 2.5rem;
+
+}
+.three-island-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+   padding: 20px;
+   text-align: center;
+}
+
+.three-island-container .islands {
+
+    align-content:flex-end;
+    text-align: center;
+    
+}
+
+.three-island-container .islands img{
+
+    width: 10vw;
+    transition: 0.3s;   
+   
+}
+
+.three-island-container .islands img:hover{
+
+    transform: translateY(-10px);
+   
+    transition: 0.3s;
+}
 
 /*End*/
 
@@ -803,6 +908,7 @@ background-color: #0695fcd8;
 
     display: flex;
     justify-content:center ;
+    justify-content: space-around;
     gap: 150px;
     padding: 10px;
     h3{
@@ -820,61 +926,24 @@ background-color: #0695fcd8;
 .footer-content-container .image-container img{
 
     width: 100%;
-}
-
-.developer-profile-container{
-
-    padding: 10px;
-    border-radius: 5px;
-    width: 20vw;
-    p{
-        color: #dcdcdc;
-
-    }
-}
- .developer-profile-container .profile{
-
-  
-    border-radius: 50%;
-    display: flex;
-    margin-top: 10px;
-    gap: 10px;
- 
-}
-
-.developer-profile-container .profile img{
-
-    width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgb(5, 67, 238);
-    opacity: 70%;
 }
 
-.developer-profile-container .information-profile{
+.quick-link h3 {
 
-    align-content: center;
- 
 
-    p{
-
-        padding: 10px;
-    }
-  
-
+    margin-bottom: 10px;
 }
 
-.developer-profile-container h3{
+.quick-link a{
 
-    letter-spacing: 10px;
-   padding-left: 10px;
-   padding-bottom: 10px;
-    color: #dcdcdc;
-
-  
+    transition: 0.4s;
 }
+.quick-link a:hover{
 
+    color: #fc1b06;
+    transition: 0.4s;
+}
 .copyright{
 
     width: 95vw;
@@ -887,5 +956,202 @@ background-color: #0695fcd8;
     padding: 30px;
     color: white;
 }
+
+/*END*/
+
+
+
+
+
+/*RESPONSIVE DESIGN*/
+
+
+@media only screen and (max-width: 600px) {
+    
+
+
+
+    /*LAnding*/
+
+.landing-page-container .philippines {
+
+   width: 100%;
+
+   h1{
+
+    font-size: 3em;
+    margin: 10px;
+    letter-spacing: 20px;
+
+   }
+
+}
+
+.landing-content .social-media img{
+
+    
+    margin: 10px;
+   
+ 
+}
+
+
+
+.landing-content-container .landing-content  {
+
+   width: 80vw;
+   font-size:10px;
+   
+
+  
+}
+
+.landing-content-container .landing-content .content{
+
+    width:100%;
+}
+
+
+
+.hero-container .hero-content-container{
+    width: 100%;
+    text-align: center;
+}
+
+.treasure-container{
+
+    display: block;
+    padding: 10px;
+    justify-items: center;
+
+}
+.treasure-container .treasure-card{
+    width: 90%;
+    margin: 20px;
+ 
+}
+
+.treasure-container .treasure-card .treasure-banner{
+
+    width: 100%;
+}
+
+.Gallery-treasure{
+
+    width: 100%;
+    
+}
+.Gallery-treasure .image-container{
+
+    width:100%;
+    flex-wrap: wrap ;
+}
+
+.Gallery-treasure .image-container .image{
+
+    width: 35vw;
+}
+
+.why-container .why-text{
+
+    font-size: 10px;
+}
+
+.why-container .why-image{
+
+    width: 100%;
+    height: 100%;
+}
+ /*LAnding*/
+
+
+
+
+
+
+  /*pages 1-7*/
+
+  .categories-container {
+
+    display: block;
+  }
+  .categories-container .image-content{
+
+    width: 400px;
+   
+   
+}
+
+.categories-container .headline-content{
+
+    font-size: small;
+    width: 80vw;
+
+    h3{
+
+        font-size: 1rem;
+    }
+   
+}
+
+
+  
+.categories-section .card-featured{
+
+   flex-wrap: wrap;
+}
+
+.categories-section .card-featured .card-banner{
+
+    width: 100%;
+}
+  /*apges 1-7*/
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer{
+
+    font-size: small;
+}
+.social-media-container .social-container img{
+
+    width: 15px;
+}
+
+.footer-content-container{
+
+    font-size: small;
+    justify-content: space-around;
+    width: 90%;
+    gap: 30px;
+    justify-self: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.footer-content-container .image-container{
+    
+    width: 30vw;
+   justify-content: center;
+}
+
+
+.footer-content-container .image-container {
+
+   
+
+}
+
+
+}
+/*end*/
+
 
 /*END*/
