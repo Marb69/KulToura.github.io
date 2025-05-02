@@ -6,7 +6,7 @@
 body{
 
     font-family: 'Poppins',sans-serif;
-    background-color: #fbf9f8;
+    background-color: #e1dcda;
 }
 
 
@@ -143,6 +143,13 @@ body{
 
 /*NAVAGATION*/
 
+.welcome{
+
+    background-color: #cf9b17;
+    justify-items: center;
+    align-content: center;
+    height: 40px;
+}
 .navagation .logo h1{
 
     padding: 10px;
@@ -360,12 +367,13 @@ ul li:hover ul.dropdown{
 }
 .treasure-card{
 
+    background-color: #ebeced;
     margin: 10px;
     width: 20vw;
     padding: 10px;
     justify-items: center;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgb(200, 197, 197);
+    box-shadow: 0px 0px 10px rgb(175, 174, 174);
     transition: 0.40s ;
    
 
@@ -617,8 +625,10 @@ ul li:hover ul.dropdown{
 
     display: flex;
     margin: 30px;
-    padding: 20px;
+   
     gap: 20px;
+ 
+  
     
     
 }
@@ -655,7 +665,7 @@ ul li:hover ul.dropdown{
 
 
     transform: scale(1.04);
-    transition: 0.3s;
+    transition: 0.3s ;
 }
 .card-featured .card-container .card-description{
 
@@ -737,10 +747,13 @@ ul li:hover ul.dropdown{
      justify-content: space-between;
      margin-bottom: 20px;   
 
+
      h3{
 
         font-size: 2.0rem;
      }
+
+    
 }
 .philippines-container-content{
 
@@ -749,12 +762,17 @@ ul li:hover ul.dropdown{
     
 }
 
+.about-philippines-subtext{
+
+    text-align: justify;
+}
+
 
 .about-philippines .philippine-gallery-container{
 
     justify-items: center;
     padding: 10px;
-    background-color: #b0b3b4;
+    background-color: #d3d3d3;
 }
 .philippine-gallery-container .card-container{
 
@@ -810,18 +828,21 @@ ul li:hover ul.dropdown{
     gap: 10vw;
    padding: 20px;
    text-align: center;
-}
+   flex-wrap: wrap;
 
+}
 .three-island-container .islands {
 
     align-content:flex-end;
     text-align: center;
+    width: 10vw;
+
     
 }
 
 .three-island-container .islands img{
 
-    width: 10vw;
+    width: 100%;
     transition: 0.3s;   
    
 }
@@ -976,10 +997,11 @@ background-color: #0695fcd8;
 .landing-page-container .philippines {
 
    width: 100%;
+  
 
    h1{
 
-    font-size: 3em;
+    font-size: 2em;
     margin: 10px;
     letter-spacing: 20px;
 
@@ -1000,15 +1022,28 @@ background-color: #0695fcd8;
 .landing-content-container .landing-content  {
 
    width: 80vw;
-   font-size:10px;
+   
    
 
   
 }
 
+.landing-content-container .landing-content  .btn{
+
+    font-size: 15px;
+}
+
 .landing-content-container .landing-content .content{
 
     width:100%;
+    h3{
+
+        font-size: 30px;
+    }
+    p{
+
+        font-size: 20px;
+    }
 }
 
 
@@ -1099,18 +1134,51 @@ background-color: #0695fcd8;
 .categories-section .card-featured{
 
    flex-wrap: wrap;
+   width: 80%;
+    justify-content: center;
+   justify-self: center;
 }
+ .card-featured .card-container .cta-btn{
 
+    width: 20vw;
+}
 .categories-section .card-featured .card-banner{
 
     width: 100%;
+}.categories-section .card-featured .card-container{
+
+width: 28vw;
+font-size: 13px;
+ 
 }
+
   /*apges 1-7*/
 
 
+/*about-philippines*/
 
 
 
+.philippine-gallery-container .card-container .image{
+
+    width: 100%;
+
+}
+
+.section-island h2{
+
+    font-size: medium;
+}
+
+.three-island-container{
+
+    width: 100%;
+}
+.three-island-container .islands{
+
+    width: 60%;
+}
+/*end*/
 
 
 /*FOOTER*/
